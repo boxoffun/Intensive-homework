@@ -169,7 +169,7 @@ function search(target) {
         'apiKey': 'AIzaSyCjIxxudS-z25pFFVtsyTGnMYFvnSwdKOg',
         'discoveryDocs':["https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest"]
     }).then(function() {
-        return.gapi.client.youtube.search.list({
+        return gapi.client.youtube.search.list({
             'maxResults':'10',
             'part': 'snippet',
             'q': `${target}`,
